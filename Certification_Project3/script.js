@@ -70,6 +70,58 @@ vote("Morocco", "traveler3");
 // ======================
 
 console.log(displayResults());
+const optionInput = document.getElementById("option-input");
+const optionSelect = document.getElementById("option-select");
+const voterInput = document.getElementById("voter-input");
+const result = document.getElementById("result");
+
+function refreshOptions() {
+
+    optionSelect.innerHTML = "";
+
+    for (const option of poll.keys()) {
+
+        const newOption = document.createElement("option");
+
+        newOption.value = option;
+        newOption.textContent = option;
+
+        optionSelect.appendChild(newOption);
+
+    }
+
+}
+
+refreshOptions();
+
+function addNewOption() {
+
+    const option = optionInput.value;
+
+    result.textContent = addOption(option);
+
+    optionInput.value = "";
+
+    refreshOptions();
+
+}
+
+function castVote() {
+
+    const option = optionSelect.value;
+    const voter = voterInput.value;
+
+    result.textContent = vote(option, voter);
+
+    voterInput.value = "";
+
+}
+
+function showResults() {
+
+    result.textContent = displayResults();
+
+}
 
 /*
 Exemple :

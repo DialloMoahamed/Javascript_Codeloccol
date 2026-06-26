@@ -58,6 +58,33 @@ class BankAccount {
 // Création du compte demandé
 const myAccount = new BankAccount();
 
+const amountInput = document.getElementById("amount");
+const result = document.getElementById("result");
+
+function deposit() {
+    const amount = Number(amountInput.value);
+    result.textContent = myAccount.deposit(amount);
+    amountInput.value = "";
+}
+
+function withdraw() {
+    const amount = Number(amountInput.value);
+    result.textContent = myAccount.withdraw(amount);
+    amountInput.value = "";
+}
+
+function balance() {
+    result.textContent = myAccount.checkBalance();
+}
+
+function deposits() {
+    result.textContent = myAccount.listAllDeposits();
+}
+
+function withdrawals() {
+    result.textContent = myAccount.listAllWithdrawals();
+}
+
 // Au moins 5 transactions
 myAccount.deposit(200);
 myAccount.deposit(150);

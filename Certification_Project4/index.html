@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Account Management</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.buttons{
+    display:grid;
+    gap:10px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#result{
+    margin-top:20px;
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:8px;
+    min-height:80px;
+    white-space:pre-line;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Bank Account Management</h1>
+
+<input
+type="number"
+id="amount"
+placeholder="Enter an amount">
+
+<div class="buttons">
+
+<button onclick="deposit()">Deposit</button>
+
+<button onclick="withdraw()">Withdraw</button>
+
+<button onclick="balance()">Check Balance</button>
+
+<button onclick="deposits()">Show Deposits</button>
+
+<button onclick="withdrawals()">Show Withdrawals</button>
+
+</div>
+
+<div id="result"></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
