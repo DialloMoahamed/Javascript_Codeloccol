@@ -4,20 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+    <div id="weather-container">
     <select id="city-select">
-  <option value=""></option>
-  <option value="new york">New York</option>
-  <option value="los angeles">Los Angeles</option>
-  <option value="chicago">Chicago</option>
-  <option value="paris">Paris</option>
-  <option value="tokyo">Tokyo</option>
-  <option value="london">London</option>
-</select>
+        <option value=""></option>
+        <option value="new york">New York</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="london">London</option>
+    </select>
 
     <button id="get-weather-btn">Get Weather</button>
 
@@ -30,6 +31,7 @@
     <p id="wind-gust"></p>
     <p id="weather-main"></p>
     <p id="location"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 
