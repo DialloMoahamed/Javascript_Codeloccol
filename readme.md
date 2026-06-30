@@ -144,4 +144,4 @@ Chaque projet dispose de son propre **README.md** détaillant :
 
 Développeur Web
 
-Projet réalisé dans le cadre de la certification **JavaScript Algorithms and Data Structures** de **freeCodeCamp**.
+Projet réalisé dans le cadre de la certification **JavaScript Certification** de **freeCodeCamp**.
